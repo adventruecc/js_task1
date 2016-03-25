@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8	">
+<meta charset="utf-8">
 	<title>IFE JavaScript Task 01</title>
 </head>
 <body>
@@ -11,7 +11,9 @@
 <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 <script type="text/javascript">
 	function btn(){
-		
+			var inputn=document.getElementById('aqi-input');
+			var texta=document.getElementById('aqi-display');
+			texta.innerHTML=inputn.value;
 	}
 
 

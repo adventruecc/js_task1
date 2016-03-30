@@ -10,11 +10,13 @@
 
 <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 <script type="text/javascript">
-	// function btn(){
-	// 		var inputn=document.getElementById('aqi-input');
-	// 		var texta=document.getElementById('aqi-display');
-	// 		texta.innerHTML=inputn.value;
-	// }
+
+	// 自写①
+	/*function btn(){
+			var inputn=document.getElementById('aqi-input');
+			var texta=document.getElementById('aqi-display');
+			texta.innerHTML=inputn.value;
+	}*/
 
 	(function(){
 		/*
@@ -26,9 +28,16 @@
 
 		var btn=document.getElementById('button');
 		btn.onclick=function(){
-			
+			var inputt=document.getElementById('aqi-input');
+			var texta=document.getElementById('aqi-display');
 
-			 document.getElementById('aqi-display').innerHTML=document.getElementById('aqi-input').value;
+			if(inputt.value){
+				texta.innerHTML=inputt.value;	
+			}else{
+				alert('aaa')
+			}
+			
+			
 		}
 
 
